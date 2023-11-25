@@ -5,6 +5,6 @@ router = APIRouter()
 
 
 @router.post("/hi")
-def greet(who: str = Body(embed=True)):
-    """Body Parameter"""
+def hello4(who: str = Body(embed=True)):
     return f"Hello? {who}?"
+
