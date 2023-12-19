@@ -38,6 +38,8 @@ sniffio==1.3.0
     # via anyio
 starlette==0.27.0
     # via fastapi
+tinydb==4.8.0
+    # via -r requirements.in
 typer==0.9.0
     # via -r requirements.in
 typing-extensions==4.8.0

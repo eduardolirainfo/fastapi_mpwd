@@ -7,5 +7,5 @@ app = FastAPI(
     description="mpwd",
 )
 
-
+# uvicorn mpwd.app:app --reload
 app.include_router(main_router)
