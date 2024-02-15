@@ -1,4 +1,8 @@
+""" mpwd CLI """
+import code
+
 import typer
+from IPython import start_ipython
 
 main = typer.Typer(name="mpwd CLI")
 
@@ -9,10 +13,6 @@ def shell():
 
     typer.echo("Opening interactive shell")
     try:
-        from IPython import start_ipython
-
         start_ipython()
     except ImportError:
-        import code
-
         code.interact()

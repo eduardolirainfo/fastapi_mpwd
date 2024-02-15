@@ -1,4 +1,6 @@
+""" FastAPI app """
 from fastapi import FastAPI
+
 from .routes import main_router
 
 app = FastAPI(
